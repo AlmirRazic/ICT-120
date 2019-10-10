@@ -1,0 +1,162 @@
+-----------BASE-----------------------------------------
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title></title>
+
+        <style>
+        
+ 
+        #addams {
+
+            font-family:monospace;
+
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+    
+    <p></p>
+	<br>
+
+    </body>
+
+</html>
+
+
+
+
+-----------image--------------------------------------------
+
+
+<img src="download.jpg">		//met une img (l'image dans le meme répertoire)
+alt="CPNV logo"				// alternativ àl'image
+
+
+-----------commentaire-----------------------------------
+
+
+
+<!--    -->			//en HTML
+/*   */				//en CSS
+
+
+
+
+------------Tableau---------------------------------------
+<table>
+      <thead>
+
+        <tr>
+
+          <th></th>
+
+          <th></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <td></td>
+
+         <td></td>
+
+        </tr>
+
+      </tbody>
+
+</table>
+
+.td{
+            border: 1px solid white;
+            height: 25px;
+            width: 150px;
+            text-align: center;
+        }
+
+<td clospan="2"></td>			//fusionner des colones
+<td rowspan="2"></td>			//fusionner des lignes
+
+
+#############################################################################
+CSS
+#############################################################################
+
+
+exemple{}		//directement les balise
+.exemple{}		//classe  <p class="exemple"></p>
+#exemple{}		//ID(Unique) <p id="exemple"></p>
+-------------------------------------------------------------
+
+<link rel="stylesheet" type="text/css" href="style.css"> //lier un CSS à une page html
+
+--------------------------------------------------------------
+
+exemple{
+	text-align: center;		//alligner la text à ...
+	vertical-align: top;		//aligner le text verticalement
+	font-family: monospace;		//Changer la police
+	background-color: purple;	//Change la couleur du fond d'écran
+	font-size: 11px;		//Change la taille du selectioné
+	font-weight: bold;		//change le texte en gras
+	font-style: italic;		//change le style en italic
+	font: italic 13px monospace;	//tout en un
+	line-height: 15px;		//changer la hauteur de chaque ligne
+	text-decoration: underline:none;//changer la (décoration du text)
+	
+	width: 70% ou 123px;		//change la largeur
+	height: 180px;			//change la hauteur
+	html,body{
+            height: 100%;		// on en a absolument besoin pour les %
+        }
+	
+
+	top:10px;			//en haut
+	bot:10px;			//en bas
+	left:10px;			//gauche
+	right:10px;			//droite
+
+	overflow: auto;			//faire dérouler le text
+	margin: 15px 0px 0px 0px;	//changer la marge de gauche;haut;bas;droite
+	border:	2px solid;		//faire une bordure
+		    double;		//style de bordure
+		    outset;		//style de bordure
+	border-top: 10px solid;		//bordure du haut
+	padding: 15px;			//marge interne
+	position: absolute;		//fixe par rapport à la page
+	position: relative;		//sa subi toutes les modifications
+	position: fixed;		//complétement fixé meme en scrollant
+	z-index: 1;			//position des diférentes couches
+	float: left;			// se trouve le coté par raport au contenu
+}	  
+##############################################################################
+Liens
+##############################################################################
+
+<a href=""></a>			//définir une URL
+<a href="mailto:"></a>		//liens pour un email
+<a title=""></a>		//
+<a id="Test"></a>		//défini des ancres
+<a href="exemple.html#Test"></a>//appel de l'ancre
+#top				//pour revenir directement en haut de la page
+<a target=""></a>		//défini où afficher le document
+
+
+
+
+
+
+
+

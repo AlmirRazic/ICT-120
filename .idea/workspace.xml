@@ -13,12 +13,22 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Q6HSX4fcBAoR6kUnnMpHytsUqn" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,6 +54,13 @@
       <updated>1567084126086</updated>
       <workItem from="1567084128185" duration="759000" />
       <workItem from="1567085727476" duration="1374000" />
+      <workItem from="1567677346322" duration="250000" />
+      <workItem from="1567677597363" duration="912000" />
+      <workItem from="1569488288511" duration="4572000" />
+      <workItem from="1569498657773" duration="6876000" />
+      <workItem from="1570083508390" duration="8792000" />
+      <workItem from="1570180200762" duration="3946000" />
+      <workItem from="1570695355671" duration="7106000" />
     </task>
     <servers />
   </component>

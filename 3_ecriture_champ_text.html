@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <br><br><br><br>
+    <input type="text" name="qqch" value="" id="letext_un"/>
+
+    <input type="button" value="GO" onclick="transfert()"  />
+    <input type="text" name="qqch" value="" id="letext_deux"/>
+
+</form>
+</body>
+<script>
+    function transfert() {
+        if (letext_un.value == '') {
+            alert('veuillez remplir le champ avant de clicker')
+        }else{
+            letext_deux.value = letext_un.value;
+            letext_un.value ='';
+        }
+    }
+</script>
+</html>

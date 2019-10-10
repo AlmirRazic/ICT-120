@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <br><br><br><br>
+    <!-- <a  href="\avion.jpgC:/Users/Almir.Razic/Downloads/4_image_par_survol.html" onmouseover="avion">Avion</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\araingne.jpg" onmouseover="Araignee">Araignée</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\scarabe.jpg" onmouseover="Scarabee">Scarabée</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\bille verte.jpg" onmouseover="Bille">Bille verte</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\de rouge.jpg" onmouseover="rouge">Dé rouge</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\mouche.jpg" onmouseover="Mouche">Mouche</a><br>
+    <a  href="C:\Users\Almir.Razic\Pictures\120 ex 4\voiture.jpg" onmouseover="Voiture">Voiture</a>
+    -->
+
+  <img onmouseover="">
+
+
+
+
+
+
+
+    <br><br><br><br>
+    <br><br><br><br>
+    <input type="text" name="qqch" value="" id="letext_un"/>
+
+    <input type="button" value="GO" onclick="transfert()"  />
+    <input type="text" name="qqch" value="" id="letext_deux"/>
+
+</form>
+</body>
+<script>
+    function transfert() {
+        if (letext_un.value == '') {
+            alert('veuillez remplir le champ avant de clicker')
+        }else{
+            letext_deux.value = letext_un.value;
+            letext_un.value ='';
+        }
+    }
+    function avion() {
+        var x = document.createElement("q");
+        x.setAttribute("src", "avion.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function Araignee() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function Scarabee() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function Bille() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function rouge() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function Mouche() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+    function Voiture() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "100");
+        x.setAttribute("height", "100");
+        x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+    }
+</script>
+</html>
