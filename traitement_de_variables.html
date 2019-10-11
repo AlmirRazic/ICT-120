@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .textbox{
+    height: 300px;
+    width: 400px;
+  }
+</style>
+<body>
+<form>
+  <br><br><br><br>
+  <select id="minimum">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+  </select>
+  <select>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+  </select>
+  <input type="button" value="GO"> <br>
+  <input type="text" class="textbox">
+
+
+
+  <br><br><br>
+  <input name="qqch" id="letext_un" type="text" value="">
+
+  <input onclick="transfert()" type="button" value="GO">
+  <input name="qqch" id="letext_deux" type="text" value="">
+
+</form>
+
+<script>
+    function transfert() {
+        if (letext_un.value == '') {
+            alert('veuillez remplir le champ avant de clicker')
+        }else{
+            letext_deux.value = letext_un.value;
+            letext_un.value ='';
+        }
+    }
+    function min() {
+
+    }
+</script>
+</body>
+</html>
