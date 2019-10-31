@@ -1,0 +1,31 @@
+.logo{
+  background-color: darkgrey;
+  font-family: Arial;
+  font-size: 40px;
+  width: 175px;
+}
+.bare{
+  margin-top: 50px;
+  margin-left: 300px;
+  border: 2px solid;
+  width: 340px;
+  font-family: Arial;
+
+}
+.bare_hauteur{
+  height: 40px;
+  border: none;
+  background-color: white;
+
+}
+.profil_bouton{
+  position: relative;
+  float: right;
+  margin-top: 0px;
+}
+.div_general{
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 2px solid;
+  height: 500px;
+}
