@@ -6,10 +6,11 @@
 }
 .bare{
   margin-top: 50px;
-  margin-left: 300px;
+  margin-left: 270px;
   border: 2px solid;
-  width: 340px;
+  width: 400px;
   font-family: Arial;
+  background-color: white;
 
 }
 .bare_hauteur{
@@ -28,4 +29,10 @@
   margin-left: 50px;
   border: 2px solid;
   height: 500px;
+}
+#barselected{
+  background-color: skyblue;
+}
+body{
+  background-color: whitesmoke;
 }

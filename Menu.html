@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+  <link href="C:\xampp\htdocs\ICT-120\bootstrap-4.3.1-dist\js">
+  <script src="transport.js"></script>
 </head>
 <body>
 <div class="logo">Transport</div>
-<div class="profil_bouton"><button name="profil">profil</button></div>
+<div class="profil_bouton"><button onmouseover="dessus()" name="controle" id="barcontrole">profil</button></div>
 <div class="bare">
-  <button class="bare_hauteur" onmouseover="" name="menu">menu</button>
-  <button class="bare_hauteur" onmouseover="" name="mon_horraire">mon horraire</button>
-  <button class="bare_hauteur" onmouseover="" name="Transport_sur_place">Transport sur place</button>
-  <button class="bare_hauteur" onmouseover="" name="controle">Controle</button>
+  <button id="barselected" class="bare_hauteur" onmouseover="changeBgColor(this,'grey')" onmouseout="changeBgColor(this, 'lightblue')">menu</button>
+  <button class="bare_hauteur" onmouseover="changeBgColor(this,'grey')" onmouseout="changeBgColor(this, 'white')">mon horraire</button>
+  <button class="bare_hauteur" onmouseover="changeBgColor(this,'grey')" onmouseout="changeBgColor(this, 'white')">Transport sur place</button>
+  <button class="bare_hauteur" onmouseover="changeBgColor(this,'grey')" onmouseout="changeBgColor(this, 'white')">Controle</button>
 </div>
-<div class="div_general">Infos générales</div>
+<div class="div_general">Infos générales
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#">Disabled</a>
+    </li>
+  </ul>
+</div>
 </body>
+
 </html>
