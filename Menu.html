@@ -48,14 +48,17 @@
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
       <div class="div_general"><h2>Infos générales</h2><br>
         <ul  class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
+          <li class="nav-item" style="font-size: 20px">
             <a class="nav-link active" data-toggle="tab" href="#menu">Bus</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="font-size: 20px">
             <a class="nav-link" data-toggle="tab" href="#menu1">Train</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="font-size: 20px">
             <a class="nav-link" data-toggle="tab" href="#menu2">Avion</a>
+          </li>
+          <li class="nav-item" style="font-size: 20px">
+            <a class="nav-link" data-toggle="tab" href="#menu3">trajet principal</a>
           </li>
         </ul>
 
@@ -91,7 +94,7 @@
             <table>
               <thead>
               <tr>
-                <th style="width: 600px">Allée</th>
+                <th>Allée</th>
                 <th>Retour</th>
               </tr>
               </thead>
@@ -103,86 +106,102 @@
               </tbody>
             </table>
           </div>
+          <div id="menu3" class="container tab-pane fade"><br>
+            <h3>le programme du trajet jusqu'à l'hébergement</h3>
+            <table>
+              <tbody>
+              <tr>
+                <td><h5>trajet principal</h5></td>
+              </tr>
+              <tr>
+                <td><img src="img/trajet_principal.PNG"></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+
     </div>
     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
       <div class="div_general" style="border: none">
         <ul  class="nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Numéros de place/compartiment</a>
+            <a class="nav-link active" data-toggle="tab" href="#Mon_horraire1">Numéros de place/compartiment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">Train</a>
+            <a class="nav-link" data-toggle="tab" href="#Mon_horraire2">Identité</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Avion</a>
+            <a class="nav-link" data-toggle="tab" href="#Mon_horraire3">le programme de la semaine</a>
           </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div id="Mon_horraire" class="container tab-pane active"><br>
-            <table>
+          <div id="Mon_horraire1" class="container tab-pane active"><br>
+            <table style="position: absolute">
               <tbody>
               <tr>
-                <td>numéro de vol:  357</td>
-                <td>destination:  Islande</td>
-                <td>durée du vol:  11h</td>
+                <td class="tableau_place"><h4>numéro de vol:  357</h4></td>
+                <td class="tableau_place"><h4>destination:  Islande</h4></td>
+
               </tr>
               <tr>
-                <td>class:  économique</td>
-                <td>porte: 12</td>
+                <td class="tableau_place"><h4>porte:  12</h4></td>
+                <td class="tableau_place"><h4>Départ:  10h20</h4></td>
               </tr>
               <tr>
-                <td><a href="https://www.straeto.is" target="_blank"><h4>le site</h4></a></td>
-                <td><a href="img/publictransport.2019.pdf" target="_blank"><h4>le plans</h4></a></td>
+                <td class="tableau_place"><h4>class:  économique</h4></td>
+                <td class="tableau_place"><h4>siege:  15C</h4></td>
               </tr>
+              <tr>
+                <td></td>
+                <td class="tableau_place"><h4>durée du vol:  11h</h4></td>
+              </tr>
+
               </tbody>
             </table>
           </div>
-          <div id="Mon_horraire1" class="container tab-pane fade"><br>
-            <h3 style="text-align: center; width: 500px">Désolé, mais il va falloir vous choisir un autre moyen de transport, car il n'y a pas de chemin de fer en Islande
-              Mais ne vous inquiétez pas, l'île possède un système de bus excellent !</h3>
+          <div id="Mon_horraire2" class="container tab-pane fade"><br>
+            <h3></h3>
+            <img src="img/identite.PNG">
             <p></p>
           </div>
-          <div id="Mon_horraire2" class="container tab-pane fade"><br>
-            <h3>le programme des voles pour l'islande</h3>
+          <div id="Mon_horraire3" class="container tab-pane fade"><br>
+            <h3 style="text-decoration: underline overline black">le programme des voles pour l'islande</h3>
             <table>
-              <thead>
-              <tr>
-                <th style="width: 600px">Allée</th>
-                <th>Retour</th>
-              </tr>
-              </thead>
               <tbody>
               <tr>
-                <td><div class="trajet"> 1er jour : KEFLAVIK – REYKJAVIK
+                <td style="width: 600px" class="programme"><h4>1er jour : KEFLAVIK – REYKJAVIK</h4>
                   Accueil et transfert à votre hôtel avec un arrêt au Lagon Bleu.
-                  <br>
-                  2e jour : CERCLE D'OR ET AURORES BOREALES
+                </td>
+                <td class="programme"><h4>2e jour : CERCLE D'OR ET AURORES BOREALES</h4>
                   Départ en bus vers le geyser Strokkur. Continuation en direction des chutes de Gullfoss, « les chutes d’or »,
                   qui constituent certainement l’un des plus beaux spectacles offerts par la nature islandaise ! Découverte de Thingvellir et de son paysage unique!
 
                   Chasse aux aurores boréales en soirée.
-                  <br>
-                  3e jour: EXCURSION SUR LA COTE SUD
+                </td>
+              </tr>
+              <tr>
+                <td class="programme"><h4>3e jour: EXCURSION SUR LA COTE SUD</h4>
                   Cap sur la région côtière de l’Islande du Sud dont le paysage se caractérise par des falaises où nichent les oiseaux, des plages de lave et des cascades. En chemin, visite des somptueuses chutes de Skogafoss et de Seljalandsfoss. L’après-midi, et si les conditions routières le permettent, vous vous rendez au glacier Solheimajökull. Soirée avec menu spécial «Adventure» de 9 plats au restaurant branché Kopar dans le port de Reykjavik!
-                  <br>
-                  4e jour: REYKJAVIK
-
+                </td>
+                <td class="programme"><h4>4e jour: REYKJAVIK</h4>
                   Journée libre. Profitez-en pour faire des emplettes en flânant le long de la Laugavegur ou allez admirer l’architecture impressionnante de la Hallgrímskirkja et de la nouvelle salle de concert Harpa! Nous conseillons également une promenade dans la vieille ville, la visite d'un musée ou un instant détente dans un agréable café ou dans l’un des bains géothermiques de la ville.
-                  <br>
-                  5e jour:REYKJAVIK
-
+                </td>
+              </tr>
+              <tr>
+                <td class="programme"><h4>5e jour:REYKJAVIK</h4>
                   Transfert à l'aéroport selon votre vol de départ.
-                </div></td>
+                </td>
               </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
+
     </div>
     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       <div class="div_general"><h2>chevale</h2><br>
@@ -244,6 +263,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="tab-pane fade" id="pills-contacte" role="tabpanel" aria-labelledby="pills-contact-tab">
       <div class="div_general"><h2>chien</h2><br>
@@ -305,6 +325,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 

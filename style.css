@@ -16,7 +16,15 @@
 
 }
 .bare{
-  color: black;
+  color: white;
+}
+.tableau_place{
+  height: 50px;
+  width: 300px;
+}
+.programme{
+  font-size: 20px;
+  height: 200px;
 }
 /*.bare_hauteur{
   height: 40px;
@@ -35,9 +43,9 @@
   border: 2px solid;
   height: 600px;
   width: 1550px;
-  color: black;
+  color: white;
 }
-.trajet{
+.identite{
   color: white;
   width: 450px;
   margin-left: 50px;
