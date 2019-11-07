@@ -65,6 +65,19 @@
   width: 100%;
   height: 100%;
 }
+.R_general{
+  border: solid black;
+  width: 300px;
+  height: 500px;
+}
+.R_baggage{
+  border: solid black;
+  width: 300px;
+  height: 500px;
+}
+.controle{
+  border: solid black;
+}
 /*body{
 
   background: url(images/blue-mountains-colline-fond-d-ecran-1758641.jpg) center;
