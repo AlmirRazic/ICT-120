@@ -4,16 +4,19 @@
   font-size: 40px;
   width: 175px;
 }
-.bare{
+.bare_principale{
   margin-top: 50px;
   margin-left: 270px;
   border: 2px solid;
-  width: 458px;
-  font-family: Arial;
+  width: 433px;
+  font-family: ms sans-serif;
   background-color: black;
   color: black;
   height: 43px;
 
+}
+.bare{
+  color: black;
 }
 /*.bare_hauteur{
   height: 40px;
@@ -31,6 +34,13 @@
   margin-left: 50px;
   border: 2px solid;
   height: 600px;
+  width: 1550px;
+  color: black;
+}
+.trajet{
+  color: white;
+  width: 450px;
+  margin-left: 50px;
 }
 #barselected{
   background-color: skyblue;

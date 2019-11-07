@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
   <link href="theme.css" type="text/css" rel="stylesheet">
   <link href="theme.js" type="text/css" rel="script">
@@ -24,7 +25,7 @@
 
   <div class="logo">Transport</div>
   <div class="profil_bouton"><button onmouseover="dessus()" name="controle" id="barcontrole">profil</button></div>
-  <div class="bare">
+  <div class="bare_principale">
 
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -41,7 +42,6 @@
         <a class="nav-link" id="pills-contact-tabe" data-toggle="pill" href="#pills-contacte" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
       </li>
     </ul>
-
   </div>
 
   <div class="tab-content" id="pills-tabContent">
@@ -82,7 +82,7 @@
             </table>
           </div>
           <div id="menu1" class="container tab-pane fade"><br>
-            <h3 style="text-align: center; width: 500px">Désolé, mais il va falloir vous choisir un autre moyen de transport, car il n'y a pas de chemin de fer en Islande
+            <h3 style="margin-left: 250px ; width: 500px">Désolé, mais il va falloir vous choisir un autre moyen de transport, car il n'y a pas de chemin de fer en Islande
               Mais ne vous inquiétez pas, l'île possède un système de bus excellent !</h3>
             <p></p>
           </div>
@@ -107,10 +107,10 @@
       </div>
     </div>
     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-      <div class="div_general"><h2>chat</h2><br>
+      <div class="div_general" style="border: none">
         <ul  class="nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Bus</a>
+            <a class="nav-link active" data-toggle="tab" href="#home">Numéros de place/compartiment</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#menu1">Train</a>
@@ -124,16 +124,15 @@
         <div class="tab-content">
           <div id="Mon_horraire" class="container tab-pane active"><br>
             <table>
-              <thead>
-              <tr>
-                <th>home</th>
-                <th>far</th>
-              </tr>
-              </thead>
               <tbody>
               <tr>
-                <td><img src="img/horaire_%20bus.png" width="650"></td>
-                <td><img src="img/plans_bus.PNG" width="600"></td>
+                <td>numéro de vol:  357</td>
+                <td>destination:  Islande</td>
+                <td>durée du vol:  11h</td>
+              </tr>
+              <tr>
+                <td>class:  économique</td>
+                <td>porte: 12</td>
               </tr>
               <tr>
                 <td><a href="https://www.straeto.is" target="_blank"><h4>le site</h4></a></td>
@@ -158,8 +157,26 @@
               </thead>
               <tbody>
               <tr>
-                <td><img src="img/aller.PNG"></td>
-                <td><img src="img/retour.png"></td>
+                <td><div class="trajet"> 1er jour : KEFLAVIK – REYKJAVIK
+                  Accueil et transfert à votre hôtel avec un arrêt au Lagon Bleu.
+                  <br>
+                  2e jour : CERCLE D'OR ET AURORES BOREALES
+                  Départ en bus vers le geyser Strokkur. Continuation en direction des chutes de Gullfoss, « les chutes d’or »,
+                  qui constituent certainement l’un des plus beaux spectacles offerts par la nature islandaise ! Découverte de Thingvellir et de son paysage unique!
+
+                  Chasse aux aurores boréales en soirée.
+                  <br>
+                  3e jour: EXCURSION SUR LA COTE SUD
+                  Cap sur la région côtière de l’Islande du Sud dont le paysage se caractérise par des falaises où nichent les oiseaux, des plages de lave et des cascades. En chemin, visite des somptueuses chutes de Skogafoss et de Seljalandsfoss. L’après-midi, et si les conditions routières le permettent, vous vous rendez au glacier Solheimajökull. Soirée avec menu spécial «Adventure» de 9 plats au restaurant branché Kopar dans le port de Reykjavik!
+                  <br>
+                  4e jour: REYKJAVIK
+
+                  Journée libre. Profitez-en pour faire des emplettes en flânant le long de la Laugavegur ou allez admirer l’architecture impressionnante de la Hallgrímskirkja et de la nouvelle salle de concert Harpa! Nous conseillons également une promenade dans la vieille ville, la visite d'un musée ou un instant détente dans un agréable café ou dans l’un des bains géothermiques de la ville.
+                  <br>
+                  5e jour:REYKJAVIK
+
+                  Transfert à l'aéroport selon votre vol de départ.
+                </div></td>
               </tr>
               </tbody>
             </table>
