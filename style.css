@@ -15,6 +15,12 @@
   height: 43px;
 
 }
+.image_programme{
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  z-index: -1;
+}
 .bare{
   color: white;
 }

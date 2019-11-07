@@ -25,9 +25,11 @@
 
   <div class="logo">Transport</div>
   <div class="profil_bouton"><button onmouseover="dessus()" name="controle" id="barcontrole">profil</button></div>
+
+
+
+
   <div class="bare_principale">
-
-
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Menu</a>
@@ -79,7 +81,7 @@
               </tr>
               <tr>
                 <td><a href="https://www.straeto.is" target="_blank"><h4>le site</h4></a></td>
-                <td><a href="img/publictransport.2019.pdf" target="_blank"><h4>le plans</h4></a></td>
+                <td><a href="img/publictransport.2019.pdf" target="_blank"><h4>le plan</h4></a></td>
               </tr>
               </tbody>
             </table>
@@ -169,14 +171,19 @@
             <p></p>
           </div>
           <div id="Mon_horraire3" class="container tab-pane fade"><br>
-            <h3 style="text-decoration: underline overline black">le programme des voles pour l'islande</h3>
+            <h3 style="text-decoration: underline overline black; float: left; position: absolute">le programme des voles pour l'islande</h3>
             <table>
               <tbody>
               <tr>
-                <td style="width: 600px" class="programme"><h4>1er jour : KEFLAVIK – REYKJAVIK</h4>
+                <td style="width: 600px" class="programme"><h4><a onmouseover="aficher(img_jour1)"  onmouseout="normalImg(img_jour1)" >1er jour : KEFLAVIK – REYKJAVIK</a><br></h4>
+                  <img id="img_jour2"  src="avion.jpg" class="image_programme">
+                  <img id="img_jour4"  src="avion.jpg" class="image_programme">
                   Accueil et transfert à votre hôtel avec un arrêt au Lagon Bleu.
                 </td>
-                <td class="programme"><h4>2e jour : CERCLE D'OR ET AURORES BOREALES</h4>
+                <td class="programme"><h4><a onmouseover="aficher(img_jour2)"  onmouseout="normalImg(img_jour2)" >2e jour : CERCLE D'OR ET AURORES BOREALES</a><br></h4>
+                  <img id="img_jour1"  src="avion.jpg" class="image_programme">
+                  <img id="img_jour3"  src="avion.jpg" class="image_programme">
+                  <img id="img_jour5"  src="avion.jpg" class="image_programme">
                   Départ en bus vers le geyser Strokkur. Continuation en direction des chutes de Gullfoss, « les chutes d’or »,
                   qui constituent certainement l’un des plus beaux spectacles offerts par la nature islandaise ! Découverte de Thingvellir et de son paysage unique!
 
@@ -184,15 +191,15 @@
                 </td>
               </tr>
               <tr>
-                <td class="programme"><h4>3e jour: EXCURSION SUR LA COTE SUD</h4>
+                <td class="programme"><h4><a onmouseover="aficher(img_jour3)"  onmouseout="normalImg(img_jour3)" >3e jour: EXCURSION SUR LA COTE SUD</a><br></h4>
                   Cap sur la région côtière de l’Islande du Sud dont le paysage se caractérise par des falaises où nichent les oiseaux, des plages de lave et des cascades. En chemin, visite des somptueuses chutes de Skogafoss et de Seljalandsfoss. L’après-midi, et si les conditions routières le permettent, vous vous rendez au glacier Solheimajökull. Soirée avec menu spécial «Adventure» de 9 plats au restaurant branché Kopar dans le port de Reykjavik!
                 </td>
-                <td class="programme"><h4>4e jour: REYKJAVIK</h4>
+                <td class="programme"><h4><a onmouseover="aficher(img_jour4)"  onmouseout="normalImg(img_jour4)" >4e jour: REYKJAVIK</a><br></h4>
                   Journée libre. Profitez-en pour faire des emplettes en flânant le long de la Laugavegur ou allez admirer l’architecture impressionnante de la Hallgrímskirkja et de la nouvelle salle de concert Harpa! Nous conseillons également une promenade dans la vieille ville, la visite d'un musée ou un instant détente dans un agréable café ou dans l’un des bains géothermiques de la ville.
                 </td>
               </tr>
               <tr>
-                <td class="programme"><h4>5e jour:REYKJAVIK</h4>
+                <td class="programme"><h4><a onmouseover="aficher(img_jour5)"  onmouseout="normalImg(img_jour5)" >5e jour:REYKJAVIK</a><br></h4>
                   Transfert à l'aéroport selon votre vol de départ.
                 </td>
               </tr>

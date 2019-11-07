@@ -8,23 +8,23 @@
 <form>
   <br><br><br><br>
 
+  <!--<a onmouseover="aficher()"  onmouseout="normalImg()" >Avion</a><br>-->
+  <a onmouseover="aficher(avion)"  onmouseout="normalImg(avion)" >Avion</a><br>
+  <a onmouseover="aficher(Araignee)"  onmouseout="normalImg(Araignee)">Araignée</a><br>
+  <a onmouseover="aficher(Scarabee)" onmouseout="normalImg(Scarabee)">Scarabée</a><br>
+  <a onmouseover="aficher(Bille)" onmouseout="normalImg(Bille)">Bille verte</a><br>
+  <a onmouseover="aficher(rouge)" onmouseout="normalImg(rouge)">Dé rouge</a><br>
+  <a onmouseover="aficher(Mouche)" onmouseout="normalImg(Mouche)">Mouche</a><br>
+  <a onmouseover="aficher(Voiture)" onmouseout="normalImg(Voiture)">Voiture</a><br>
 
-  <a  href="" onmouseover="aficher(avion)" onmouseout="normalImg(avion)" >Avion</a><br>
-  <a  href="" onmouseover="aficher(Araignee)"  onmouseout="normalImg(Araignee)">Araignée</a><br>
-  <a  href="" onmouseover="aficher(Scarabee)" onmouseout="normalImg(Scarabee)">Scarabée</a><br>
-  <a  href="" onmouseover="aficher(Bille)" onmouseout="normalImg(Bille)">Bille verte</a><br>
-  <a  href="" onmouseover="aficher(rouge)" onmouseout="normalImg(rouge)">Dé rouge</a><br>
-  <a  href="" onmouseover="aficher(Mouche)" onmouseout="normalImg(Mouche)">Mouche</a><br>
-  <a  href="" onmouseover="aficher(Voiture)" onmouseout="normalImg(Voiture)">Voiture</a><br>
-
-
-  <p id="avion" style="height: 0px;width: 0px"><img  src="avion.jpg">asdadddadsdsads sda dad asd asda</p>
-  <div id="Araignee"><img  src="araingne.jpg" style="height: 0px;width: 0px"></div>
-  <div id="Scarabee"><img  src="scarabe.jpg" style="height: 0px;width: 0px"></div>
-  <div id="Bille"><img  src="bille%20verte.jpg" style="height: 0px;width: 0px"></div>
-  <div id="rouge"><img  src="de%20rouge.jpg" style="height: 0px;width: 0px"></div>
-  <div id="Mouche"><img  src="mouche.jpg" style="height: 0px;width: 0px"></div>
-  <div id="Voiture"><img  src="voiture.jpg" style="height: 0px;width: 0px"></div>
+  <!--<img id=""  src="avion.jpg">-->
+  <img id="avion"  src="avion.jpg" style="height: 0px;width: 0px;z-index: -1">
+  <img id="Araignee"  src="araingne.jpg" style="height: 0px;width: 0px">
+  <img id="Scarabee"  src="scarabe.jpg" style="height: 0px;width: 0px">
+  <img id="Bille"  src="bille%20verte.jpg" style="height: 0px;width: 0px">
+  <img id="rouge"  src="de%20rouge.jpg" style="height: 0px;width: 0px">
+  <img id="Mouche"  src="mouche.jpg" style="height: 0px;width: 0px">
+  <img id="Voiture"  src="voiture.jpg" style="height: 0px;width: 0px">
 
 
 
@@ -48,10 +48,13 @@
     function aficher(x) {
         x.style.height = "200px";
         x.style.width = "200px";
+        x.style.zIndex = "20";
+
     }
     function normalImg(x) {
         x.style.height = "0px";
         x.style.width = "0px";
+        x.style.zIndex = "-1";
     }
 
 </script>
