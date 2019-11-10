@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8"/>
+
+    <title>Changer une image par JS</title>
+
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script>
+        window.onload = function () {
+            var liens = document.getElementsByTagName('a');
+            for (var i = 0; i < liens.length; i++) {
+                liens[i].onmouseover = function () {
+                    changeImage('Img', this.href);
+                    return false;
+                };
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div style="text-align:center;">
+
+    <a href="images/selec01.jpg" title="" onmouseover="changeImage('Img', this.href);">Avion</a><br/>
+    <a href="images/selec02.jpg" title="" onmouseover="changeImage('Img', this.href);">Araignée</a><br/>
+    <a href="images/selec03.jpg" title="" onmouseover="changeImage('Img', this.href);">Scarabée</a><br/>
+    <a href="images/selec04.jpg" title="" onmouseover="changeImage('Img', this.href);">Bille verte</a><br/>
+    <a href="images/selec05.jpg" title="" onmouseover="changeImage('Img', this.href);">Dé rouge</a><br/>
+    <a href="images/selec06.jpg" title="" onmouseover="changeImage('Img', this.href);">Mouche</a><br/>
+    <a href="images/selec07.jpg" title="" onmouseover="changeImage('Img', this.href);">Voiture</a><br/>
+
+    <br/>
+
+    <img id="Img" src="images/selec02.jpg" alt=""/>
+
+</div>
+
+</body>
+</html>

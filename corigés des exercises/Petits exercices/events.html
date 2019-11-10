@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	
+<head>
+	
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta charset="utf-8" />
+
+<title>Events</title>
+
+<script type="text/javascript">
+//<![CDATA[
+function dire(qqch){
+	alert(qqch);
+}
+
+function redirect(url){
+	if(confirm('Etes-vous sûr?')){
+		document.location.href = url;
+	}
+}
+//]]>
+</script>
+
+</head>
+
+<body>
+
+<a href="http://www.cpnv.ch" onclick="alert('Hello');">Premier lien</a>
+
+<br /><br />
+
+<a href="http://www.cpnv.ch" onclick="dire('Hello'); return false;">Second lien</a>
+
+<br /><br />
+
+<a href="http://www.cpnv.ch" onclick="return confirm('Etes-vous sûr?');">Troisième lien</a>
+
+<br /><br />
+
+<a href="http://www.cpnv.ch" onclick="redirect(this.href); return false;">Troisième lien 2</a>
+
+<br /><br />
+
+<a href="http://www.cpnv.ch" onclick="dire(prompt('Entrez quelque chose :')); return false;">Quatrième lien</a>
+
+<br /><br />
+
+<a href="schemaste-xg.jpg" onclick="window.open(this.href,'Plan','width=716,height=524'); return false;">
+<img src="scemaste-xp.jpg" alt="" />
+</a>
+
+<br /><br />
+
+<a href="popUp.html" onclick="popup = window.open(this.href,'','width=300,height=400'); return false;">Ouvrir popUp</a>
+
+<br /><br />
+
+<a href="#" onclick="popup.close(); return false;">Fermer popUp</a>
+
+</body>
+
+</html>

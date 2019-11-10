@@ -1,3 +1,11 @@
+/*auteur: Almir Razic
+titre: theme_JS
+date:09.11.2019
+version: 1*/
+
+
+
+
 jQuery(document).ready(function ($) {
 
   // noise grain toggle

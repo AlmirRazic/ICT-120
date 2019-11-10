@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8"/>
+
+    <title>Changer une image par JS</title>
+
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div style="text-align:center;">
+    <img id="Img" src="images/selec01.jpg" alt=""/>
+
+    <br/><br/>
+
+    <form id="selectImgForm" action="4-Image.html" method="post">
+        <div>
+            <select id="selectImg"
+                    onchange="document.getElementById('Img').src = 'images/' + this.options[this.selectedIndex].value;">
+                <option value="selec01.jpg">Avion</option>
+                <option value="selec02.jpg">Araignée</option>
+                <option value="selec03.jpg">Scarabée</option>
+                <option value="selec04.jpg">Bille verte</option>
+                <option value="selec05.jpg">Dé rouge</option>
+                <option value="selec06.jpg">Mouche</option>
+                <option value="selec07.jpg">Voiture</option>
+            </select>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>

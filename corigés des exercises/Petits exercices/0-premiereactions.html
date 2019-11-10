@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premiers pas en js</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="div01" onclick="blue();">Cette div doit avoir un fond bleu après qu'on lui aie cliqué dessus</div>
+<div id="div02" onclick="strikethrough();">Cette div avoir son texte 'tracé' après qu'on lui aie cliqué dessus</div>
+<div id="div03" onmouseenter="arial();" onmouseleave="normal();">Ce texte doit être en police Arial quand la souris le survole</div>
+<div id="div04">
+    Cette div doit dire 'YES' en blanc sur fond vert quand les deux checkboxes dessous sont cochées.<br>
+    A ce moment les checkboxes doivent disparaître<br>
+    <input type="checkbox" id="chk01" onchange="testcheck();"></input><input type="checkbox" id="chk02" onchange="testcheck();"></input>
+</div>
+<div id="div05" onclick="destroy();">
+    Quand on clique sur ce texte, ça détruit
+    <div>cette div</div>
+</div>
+
+</body>
+</html>

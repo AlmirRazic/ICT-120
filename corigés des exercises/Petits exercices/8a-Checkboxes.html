@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox</title>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+<form>
+    Recevoir des news concernant:<br>
+    <fieldset style="display: inline-block">
+        <input id="course" type="checkbox"> Les cours <br>
+        <input id="events" type="checkbox"> Les manifetations <br>
+        <input id="schedule" type="checkbox"> Les horaires <br>
+    </fieldset><br>
+    <a href="#" onclick="checkall(); return false;">Tous</a> | <a href="#" onclick="none()">Aucun</a> | <a
+        href="#" onclick="invert()">Inverser</a>
+</form>
+</body>
+</html>
