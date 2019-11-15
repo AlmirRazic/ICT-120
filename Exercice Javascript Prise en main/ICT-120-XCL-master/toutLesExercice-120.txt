@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premiers pas en js</title>
+    <style>
+        div {
+            padding : 5px;
+            margin: 5px;
+            border: solid 1px black;
+            width: fit-content;
+        }
+    </style>
+
+
+
+</head>
+<body onload="question7()">
+<h2>1. Ajouter/enlever du CSS</h2>
+<div id="question1" onclick="changerCouleurFond()">Cette div doit avoir un fond bleu et son texte 'tracé' après qu'on lui aie cliqué dessus</div>
+
+<h2>2. Ajouter/enlever du CSS</h2>
+<div id="question2" onclick="question2()">La div ci-dessus redevient normale quand on clique sur ce texte</div>
+
+<h2>3. Gérer les événements</h2>
+<div id="question3" onmouseover="question3()">Ce texte doit être en police Arial quand la souris le survole</div>
+
+<h2>4. Détruire / Ajouter des éléments</h2>
+<div id="a" onclick="question4()">
+    Cette div devient un gros 'YES' en blanc sur fond vert quand les deux checkboxes dessous sont cochées.<br>
+    <input type="checkbox" id="checkbox1"><input type="checkbox" id="checkbox2">
+</div>
+
+
+<h2>5. Détruire / Ajouter des éléments</h2>
+<div >
+    <span id="text-destroy-div" onclick=" effacer()">Quand on clique sur ce texte, ça détruit</span>
+    <div id="divAEffacer">cette div</div>
+</div>
+
+
+<h2>6. Gérer la valeur d'un élément du DOM</h2>
+<div>
+    Quand l'utilisateur tape son nom, le champ initiales se remplit automatiquement
+    <form>
+        Nom: <input name="txtName" type="text" id="b"><br>
+        Initiales: <input name="txtInitials" type="text" id="user-initial-output"><br>
+        <input type="button" value="Ok" id="submit-button" onclick="writeInitials() ">
+    </form>
+</div>
+
+
+<h2>7. Modifier des attributs d'éléments, Utiliser un timer, Cacher/Montrer un élément</h2>
+<div >
+    Gérez la séquence de départ:
+    <ul>
+        <li>Le bouton 'A vos marques' est actif, le bouton 'Prêt' est désactivé, le bouton 'Partez' est invisible</li>
+        <li>Clic sur 'A vos marques'
+            <ul>
+                <li>Le bouton 'A vos marques' est désactivé</li>
+                <li>Le bouton 'Prêt' est actif</li>
+                <li>Le bouton 'Partez' est désactivé</li>
+                <li>L'image est 'marks.png</li>
+            </ul>
+        </li>
+        <li>Clic sur 'Prêt'
+            <ul>
+                <li>Le bouton 'A vos marques' est invisible</li>
+                <li>Le bouton 'Prêt' est désactivé</li>
+                <li>Le bouton 'Partez' est actif</li>
+                <li>L'image est 'set.png</li>
+            </ul>
+        </li>
+        <li>Clic sur 'Partez'
+            <ul>
+                <li>Le bouton 'A vos marques' est invisible</li>
+                <li>Le bouton 'Prêt' est invisible</li>
+                <li>Le bouton 'Partez' est désactivé</li>
+                <li>L'image est 'go.png</li>
+                <li>Après 3 secondes:
+                    <ul>
+                        <li>L'image revient à 'empty.png'</li>
+                        <li>Le bouton 'A vos marques' est actif</li>
+                        <li>Le bouton 'Prêt' est désactivé</li>
+                        <li>Le bouton 'Partez' est invisible</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <button id="button1" onclick="question7p1()">A vos marques</button>
+    <button id="button2"onclick="question7p2()">Prêt</button>
+    <button id="button3" onclick="question7p3()">Partez</button><br>
+
+    <script src="question6.js"></script>
+    <script src="js.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+//fonction pour changer le backgroundcolor et rendre le texte baré QUESTION 1
+function changerCouleurFond(){
+
+    document.getElementById("question1").style.backgroundColor='blue';
+    document.getElementById('question1').style.textDecoration="line-through";
+
+}
+// QUESTION 2
+function question2(){
+    document.getElementById("question1").style.backgroundColor='white';
+    document.getElementById('question1').style.textDecoration="";
+}
+
+
+
+
+//function qui change la police du text quand on survole sur le texte avec la souris dessus QUESTION 3
+function question3(){
+        document.getElementById('question3').style.fontFamily = "Arial";
+}
+
+
+//question 4
+function question4(){
+
+    if (document.getElementById("checkbox1").checked == true && document.getElementById("checkbox2").checked == true)
+    {
+        document.getElementById("a").textContent = "YES";
+        document.getElementById("a").style.backgroundColor = "green";
+    }
+}
+
+
+
+//question 5
+function effacer(){
+
+    var monInput = document.getElementById('divAEffacer');
+    monInput.parentNode.removeChild(monInput);
+
+}
+
+
+//question 6
+//Initiation of variables
+var userInput = document.getElementById("b");
+var userOutput = document.getElementById("user-initial-output");
+console.log(userInput);
+
+
+//Outputs the initals
+function writeInitials() {
+    console.log("input button has been clicked");
+    var initials = userInput.value.match(/\b(\w)/g); //Gets the first letter of every start of words
+    console.log(initials);
+    initials = initials.join(""); //takes out the ,
+    userOutput.value = initials; //show the result
+}
+
+
+
+
+//question 7
+function question7(){
+
+    //desactiver un boutton
+    document.getElementById('button2').disabled = true;
+
+    //rendre invisible un boutton
+    button3.style.visibility="hidden";
+
+}
+
+
+//question 7 partie 1
+function question7p1(){
+
+    //desactiver un boutton
+    document.getElementById('button1').disabled = true;
+
+    //activé un boutton
+    document.getElementById('button2').disabled = false;
+
+    //desactiver un boutton
+    document.getElementById('button3').disabled = true;
+
+    button3.style.visibility = "visible";
+
+    var myImg = new Image();
+    myImg.src = 'image/marks.png';
+
+    document.body.appendChild(myImg); // L'image est ajoutée au DOM
+}
+
+
+
+//question 7 partie 2
+function question7p2(){
+
+    //rendre invisible un boutton
+    button1.style.visibility="hidden";
+
+    //desactiver un boutton
+    document.getElementById('button2').disabled = true;
+
+    //activé un boutton
+    document.getElementById('button3').disabled = false;
+
+
+
+    document.body.appendChild(myImg); // L'image est ajoutée au DOM
+}
+
+
+
+//question 7 partie 3
+function question7p3(){
+
+    //rendre invisible un boutton
+    button1.style.visibility="hidden";
+
+    //rendre invisible un boutton
+    button2.style.visibility="hidden";
+
+    //desactivé un boutton
+    document.getElementById('button3').disabled = true;
+
+
+    var myImg = new Image();
+    myImg.src = 'image/go.png';
+
+    document.body.appendChild(myImg); // L'image est ajoutée au DOM
+
+        setTimeout(timer, 3000);
+}
+
+
+
+//fonction timer
+function timer(){
+
+
+
+
+    //rendre invisible un boutton
+    button1.style.visibility="hidden";
+
+    //desactiver un boutton
+    document.getElementById('button2').disabled = true;
+
+    //activé un boutton
+    document.getElementById('button3').disabled = false;
+
+
+    var myImg = new Image();
+    myImg.src = 'image/empty.png';
+
+    document.body.appendChild(myImg); // L'image est ajoutée au DOM
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SUPPRIMER UNE IMAGE
+  var myImg1=document.getElementById(idImage);
+  myImg1.remove();
+  */
+
+
+
+
+
+
+
+
