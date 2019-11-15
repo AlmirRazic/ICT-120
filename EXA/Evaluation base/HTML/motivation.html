@@ -1,0 +1,32 @@
+<!--auteur: Almir Razic
+titre: motivation.html
+date:15.11.2019
+version: 1-->
+
+
+<!--le script ne fonctionne pas alors que le code me semble être just-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <link href="../CSS/motivation.css" rel="stylesheet" type="text/css">
+    <link href="../JAVASCRIPT/motivation.js" rel="script" type="text/css">
+</head>
+<body onload="set_callback_events()">
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span>(prénom)</span> <span>(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea id="rappel" cols="60" rows="3" control_length="1" id_control_cell="counter"></textarea>
+        <br>
+        <span class="VertSmall">Vous avez utlilisé : <div id="counter" style="display:inline">0</div>/ 200 caractères</span><br><br>
+        <input type="submit" value="Ok">
+    </form>
+</div>
+</body>
+<script>alert(window.location.search)</script>
+</html>

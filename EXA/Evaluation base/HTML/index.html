@@ -1,0 +1,57 @@
+<!--auteur: Almir Razic
+titre: index.html
+date:15.11.2019
+version: 1-->
+
+
+<!--le script ne fonctionne pas alors que le code me semble être just-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../JAVASCRIPT/index.js" rel="script" type="text/javascript">
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html">
+      <table>
+        <tr>
+          <td><label>Prénom</label></td>
+          <td><input id="prenom_HTLM" type="text" name="txtFirstName" onkeypress="prenom_JS()"></td>
+          <td><div id="invalid_1"></div></td>
+        </tr>
+        <tr>
+          <td><label>Nom</label></td>
+          <td><input id="nom_HTLM" type="text" name="txtLastName" onkeypress="nom_JS()"></td>
+          <td><div id="invalid_2"></div></td>
+        </tr>
+        <tr>
+          <td><label>Mot de passe</label></td>
+          <td><input id="pass_HTML" type="password" onkeypress="pass_JS()"></td>
+          <td><div id="invalid_3"></div></td>
+        </tr>
+        <tr>
+          <td><label>Confirmation</label></td>
+          <td><input id="confirm_HTML" type="password" onkeypress="confirm_JS()"></td>
+          <td><div id="invalid_4"></div></td>
+        </tr>
+      </table>
+      <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
+
+
